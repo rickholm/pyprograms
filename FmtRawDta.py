@@ -72,11 +72,9 @@ def scanmakegood(placement:str):
 
     global makegood
 
+    foundsw = False
     for wkmg in makegood:
-        if re.search(wkmg, placement) == None:
-            foundsw = False
-            break
-        else:
+        if re.search(wkmg, placement) != None:
             foundsw = True
             break
 
